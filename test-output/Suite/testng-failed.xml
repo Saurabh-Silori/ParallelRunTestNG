@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browsername" value="chrome"/>
+  <test parallel="tests" name="Testparallelexecution(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="ParallelTC.parallelTest">
+        <methods>
+          <include name="test2"/>
+          <include name="beforesetup"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- ParallelTC.parallelTest -->
+    </classes>
+  </test> <!-- Testparallelexecution(failed) -->
+</suite> <!-- Failed suite [Suite] -->
